@@ -34,9 +34,9 @@ class DBHelper{
 
     String dbPath = join(appDir.path, "noteDB.db");
 
-    if (await databaseExists(dbPath)) {
+   /* if (await databaseExists(dbPath)) {
       await deleteDatabase(dbPath);
-    }
+    } */
 
     return await openDatabase(dbPath, onCreate:(db, version) async {
 
